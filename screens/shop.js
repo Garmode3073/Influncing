@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, ScrollView, StatusBar, Image, View, TextInput} from 'react-native';
 import { useFonts } from 'expo-font';
+import { ShopPost } from '../Components';
 
 const Shop = () =>{
   let [fontsLoaded] = useFonts({
@@ -109,206 +110,27 @@ const Shop = () =>{
               </View>
           </ScrollView>
         </View>
+
         <View style={{flexDirection: 'row',}}>
-
-          <View  style={styles.productleft}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
-
-          <View  style={styles.productright}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
+          <ShopPost left={true}/>
+          <ShopPost left={false}/>
         </View>
+
         <View style={{flexDirection: 'row',}}>
-
-          <View  style={styles.productleft}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
-
-          <View  style={styles.productright}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
+          <ShopPost left={true}/>
+          <ShopPost left={false}/>
         </View>
+
         <View style={{flexDirection: 'row',}}>
-
-          <View  style={styles.productleft}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
-
-          <View  style={styles.productright}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
+          <ShopPost left={true}/>
+          <ShopPost left={false}/>
         </View>
+
         <View style={{flexDirection: 'row',}}>
-
-          <View  style={styles.productleft}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
-
-          <View  style={styles.productright}>
-          <Image
-            style={styles.itemimg}
-            source={{
-              uri: 'https://images.pexels.com/photos/2529147/pexels-photo-2529147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-            }}
-          />
-          <Text style={styles.proname}>
-            Air Jorden
-          </Text>
-          <Text style={styles.prdetail}>
-            Hustle Edition
-          </Text>
-          <View>
-            <Text style={styles.proPrice}>₹ 150</Text>
-          </View>
-          <View style={styles.shopCont}>
-          <Image
-            style={styles.shopIcon}
-            source={require('../assets/icons/shop.png')}
-          />
-          </View>
-          </View>
+          <ShopPost left={true}/>
+          <ShopPost left={false}/>
         </View>
+        
         </ScrollView>
     </SafeAreaView>
   );
