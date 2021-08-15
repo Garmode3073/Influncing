@@ -111,7 +111,7 @@ const Shop = () =>{
           </ScrollView>
         </View>
 
-        <View style={{flexDirection: 'row',}}>
+        <View style={{flexDirection: 'row', flex: 1}}>
           <ShopPost left={true}/>
           <ShopPost left={false}/>
         </View>
@@ -126,11 +126,10 @@ const Shop = () =>{
           <ShopPost left={false}/>
         </View>
 
-        <View style={{flexDirection: 'row',}}>
+        <View style={{flexDirection: 'row', marginBottom: "10%"}}>
           <ShopPost left={true}/>
           <ShopPost left={false}/>
         </View>
-        
         </ScrollView>
     </SafeAreaView>
   );
@@ -143,29 +142,30 @@ const styles = StyleSheet.create({
     paddingTop: StatusBar.currentHeight,
   },
   logo: {
-    marginLeft: 140,
-    marginTop: 18,
+    marginLeft: "40%",
+    marginTop: "6%",
     borderRadius: 41,
-    width: 82,
-    height: 83,
+    width: "20%",
+    height: "80.7%",
   },
   shopping: {
-    marginLeft:90,
-    marginTop: 24,
-    borderRadius: 41,
+    marginLeft:"46%",
+    marginTop: "13%",
     opacity: 0.5
   },
   row1:{
     width: '100%',
+    height: "8%",
     flexDirection:'row',
   },
   orders:{
     position: 'absolute',
-    width: 15,
-    height: 15,
+    width: "8%",
+    height: "17%",
     fontSize:10,
-    marginLeft:100,
-    marginTop: 18,
+    marginLeft:"52%",
+    marginRight:"40%",
+    marginTop: "10%",
     backgroundColor: '#5004E0',
     borderRadius:7.5,
     paddingHorizontal:5,
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
   shopname:{
     fontSize:15,
     textAlign: 'center',
-    marginTop:8,
+    marginTop:"3%",
     fontFamily: "Poppins-Medium",
   },
   shoptime:{
@@ -185,8 +185,8 @@ const styles = StyleSheet.create({
     color:'#78909C',
   },
   shopdetails:{
-    marginLeft:107,
-    width:170,
+    marginHorizontal:"25%",
+    width:"50%",
     fontFamily: "Poppins-Medium",
     fontSize:11,
     textAlign: 'center',
@@ -209,18 +209,19 @@ const styles = StyleSheet.create({
     opacity:0.5,
   },
   tuneicon:{
-    height: 17.87,
+    height: "40%",
   },
   tunecon:{
     position: 'absolute',
-    marginLeft:301,
+    marginLeft:"83%",
+    marginRight: "4%",
     justifyContent: 'center',
     borderRadius:14,
-    marginTop:26.375,
-    height: 43.25,
-    width: 43.25,
+    marginTop:"7%",
+    height: "48%",
+    width: "17%",
     backgroundColor: '#5004E0',
-    paddingHorizontal: 15
+    paddingHorizontal: "4.5%"
   },
   gridlist:{
     height: 14,
@@ -265,55 +266,6 @@ const styles = StyleSheet.create({
     borderRadius: 7, 
     marginRight: 10
   },
-  itemimg:{
-    width: 142,
-    height: 106,
-    borderRadius:14
-  },
-  shopIcon:{
-    width:11, 
-    height: 15,
-  },
-  shopCont:{
-    justifyContent:'center',
-    width:35,
-    height:35,
-    position: 'absolute',
-    backgroundColor: '#5004E0',
-    paddingHorizontal:12,
-    borderRadius:10,
-    marginLeft: 118,
-    marginTop: 170,
-  },
-  productleft:{
-    padding:9,
-    width:160,
-    height:213,
-    marginLeft: 17,
-    marginRight: 5,
-  },
-  productright:{
-    padding:9,
-    width:160,
-    height:213,
-    marginLeft: 5,
-    marginRight: 17,
-  },
-  proname:{
-    fontSize:15,
-    marginTop:20,
-    fontFamily: "Poppins-Medium",
-  },
-  prdetail:{
-    fontSize:12,
-    color:'#ACABB3',
-    fontFamily: "Poppins-Medium",
-  },
-  proPrice:{
-    fontSize:14,
-    color:'#5004E0',
-    fontFamily: "Poppins-Medium",
-  }
 });
 
 export default Shop;

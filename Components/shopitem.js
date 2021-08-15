@@ -15,20 +15,18 @@ class ShopPost extends React.Component{
         return (
         <View style={this.props.left?{
             padding:9,
-            width:160,
-            height:213,
-            marginLeft: 17,
-            marginRight: 5,
+            width:"50%",
+            height:"100%",
           }:{
             padding:9,
-            width:160,
-            height:213,
-            marginLeft: 5,
-            marginRight: 17,
+            width:"50%",
+            height:"50%",
           }}>
+              <View style={{flex:1,}}> 
           <Image
             style={{
-                width: 142,
+                width: "96%",
+                marginHorizontal:"2%",
                 height: 106,
                 borderRadius:14
               }}
@@ -38,7 +36,8 @@ class ShopPost extends React.Component{
           />
           <Text style={{
             fontSize:15,
-            marginTop:20,
+            marginTop:"4%",
+            marginHorizontal:"2%",
             fontFamily: "Poppins-Medium",
           }}>
             Air Jorden
@@ -46,6 +45,7 @@ class ShopPost extends React.Component{
           <Text style={{
             fontSize:12,
             color:'#ACABB3',
+            marginHorizontal:"2%",
             fontFamily: "Poppins-Medium",
           }}>
             Hustle Edition
@@ -54,6 +54,7 @@ class ShopPost extends React.Component{
             <Text style={{
             fontSize:14,
             color:'#5004E0',
+            marginHorizontal:"2%",
             fontFamily: "Poppins-Medium",
           }}>₹ 150</Text>
           </View>
@@ -65,8 +66,8 @@ class ShopPost extends React.Component{
             backgroundColor: '#5004E0',
             paddingHorizontal:12,
             borderRadius:10,
-            marginLeft: 118,
-            marginTop: 170,
+            marginLeft: "80%",
+            marginTop: "90%",
           }}>
           <Image
             style={{
@@ -75,6 +76,7 @@ class ShopPost extends React.Component{
               }}
             source={require('../assets/icons/shop.png')}
           />
+          </View>
           </View>
           </View>
           );
