@@ -4,18 +4,7 @@ import { useFonts } from 'expo-font';
 import { ShopPost } from '../Components';
 
 const Shop = () =>{
-  let [fontsLoaded] = useFonts({
-    'Poppins-Medium': require('../assets/fonts/Poppins-Medium.otf'),
-  });
-
-  if (!fontsLoaded) {
-    return (<SafeAreaView>
-      <Image
-        style={styles.loading}
-        source={require('../assets/splash.png')}
-      />
-    </SafeAreaView>);
-  } else {
+  
     
   return (
     <SafeAreaView style={styles.container}>
@@ -133,7 +122,6 @@ const Shop = () =>{
         </ScrollView>
     </SafeAreaView>
   );
-          }
 }
 
 const styles = StyleSheet.create({
