@@ -3,10 +3,10 @@ import { StyleSheet, Text, SafeAreaView, ScrollView, StatusBar, Image, View, Tex
 import { LinearGradient } from "expo-linear-gradient";
 
 
-const SignUp = ()=>{
+const SignUp = (navigation)=>{
     const AnimatedLinearGradient = Animated.createAnimatedComponent(LinearGradient);
     return (
-        <TouchableWithoutFeedback onLongPress={()=>{ }}>
+        <TouchableWithoutFeedback>
         <View style={bodystyle.main}>
         
         <AnimatedLinearGradient colors={["#8C43FE", "#130CB7"]} style={{flex:1, 

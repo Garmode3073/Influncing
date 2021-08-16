@@ -19,7 +19,7 @@ const bodystyle = StyleSheet.create({
   header:{
     marginTop:"10%",
     marginHorizontal:"40%",
-    width: "20%",
+    width: "25%",
     backgroundColor: 'transparent',
     fontSize: 25,
     fontFamily: 'Poppins-Medium',
@@ -50,7 +50,7 @@ const bodystyle = StyleSheet.create({
   },
 })
 
-const Wallet = () => {
+const Wallet = (navigation) => {
   
     
   const [amount, setAmount] = useState([

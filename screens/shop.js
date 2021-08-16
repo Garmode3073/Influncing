@@ -3,7 +3,7 @@ import { StyleSheet, Text, SafeAreaView, ScrollView, StatusBar, Image, View, Tex
 import { useFonts } from 'expo-font';
 import { ShopPost } from '../Components';
 
-const Shop = () =>{
+const Shop = (navigation) =>{
   
     
   return (

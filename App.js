@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, Image} from 'react-native';
 import { useFonts } from 'expo-font';
-import {Shop, Wallet, SignUp} from './screens';
+import {Shop, Wallet, SignUp, Page67} from './screens';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -29,11 +29,12 @@ const App = () =>{
         }
       }
       initialRouteName="Wallet"
-      
+
       >
         <Stack.Screen name="Shop" component={Shop}></Stack.Screen>
         <Stack.Screen name="Wallet" component={Wallet}></Stack.Screen>
         <Stack.Screen name="SignUp" component={SignUp}></Stack.Screen>
+        <Stack.Screen name="Page67" component={Page67}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
