@@ -1,3 +1,4 @@
 import ShopPost from './shopitem';
-
-export {ShopPost};
+import CartContainer from './CartCont';
+import CartItem from './cartitem';
+export {ShopPost, CartContainer, CartItem};
