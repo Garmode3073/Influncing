@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, Image} from 'react-native';
 import { useFonts } from 'expo-font';
-import {Shop, Wallet, SignUp, Page67} from './screens';
+import {Shop, Wallet, SignUp, Page67, CartPage} from './screens';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -10,6 +10,7 @@ const Stack = createStackNavigator();
 const App = () =>{
   let [fontsLoaded] = useFonts({
     'Poppins-Medium': require('./assets/fonts/Poppins-Medium.otf'),
+    'Poppins-SemiBold': require('./assets/fonts/Poppins-SemiBold.otf'),
   });
 
   if (!fontsLoaded) {
@@ -28,13 +29,10 @@ const App = () =>{
           headerShown: false,
         }
       }
-      initialRouteName="Wallet"
+      initialRouteName="CartPage"
 
       >
-        <Stack.Screen name="Shop" component={Shop}></Stack.Screen>
-        <Stack.Screen name="Wallet" component={Wallet}></Stack.Screen>
-        <Stack.Screen name="SignUp" component={SignUp}></Stack.Screen>
-        <Stack.Screen name="Page67" component={Page67}></Stack.Screen>
+        <Stack.Screen name="CartPage" component={CartPage}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
