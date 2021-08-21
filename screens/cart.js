@@ -5,7 +5,6 @@ import Box from '../Components/box';
 import {palette, carttheme} from '../theme';
 import { ThemeProvider } from '@shopify/restyle';
 import CartItemLine from '../Components/cartitemline';
-import { ceil } from 'react-native-reanimated';
 
 
 const CartPage = () => {
