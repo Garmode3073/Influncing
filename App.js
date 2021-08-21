@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 import {Shop, Wallet, SignUp, Page67, CartPage} from './screens';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
+import ProfilePage from './screens/profile';
 
 const Stack = createStackNavigator();
 
@@ -29,10 +30,10 @@ const App = () =>{
           headerShown: false,
         }
       }
-      initialRouteName="CartPage"
+      initialRouteName="Profile"
 
       >
-        <Stack.Screen name="CartPage" component={CartPage}></Stack.Screen>
+        <Stack.Screen name="Profile" component={ProfilePage}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
